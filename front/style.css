@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+@import "./assets/css/normalize.css";
+@import "./assets/css/buttons.css";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", "Open Sans", Helveticea, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #344055;
+}
+
+.main {
+  padding: 60px 0 100px;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.create__wrapper {
+  display: none;
+  padding: 40px 0;
+}
+@media (max-width: 992px) {
+  .create__wrapper {
+    padding: 20px 0;
+  }
+}
+.create__wrapper--active {
+  display: block;
+}
+.create__form {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 16px;
+}
+.create__form-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .create__form-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.create__form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.create__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+.create__label {
+  font-size: 0.8rem;
+}
+.create__button-toggle--hide {
+  display: none;
+}
+
+.input {
+  padding: 6px 16px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid gray;
+  background-color: white;
+  max-width: 200px;
+  min-width: 100px;
+  width: 100%;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 16px 60px 16px 16px;
+}
+.item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .item__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.item__row--stretch {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.item__control {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+.item__control-icon {
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+.item__control-icon--hide {
+  display: none;
+}
+.item__input {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: #344055;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.item__input--active {
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 6px 16px;
+}
+.item__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  min-width: 250px;
+  gap: 4px;
+}
+.item__label {
+  font-size: 0.8rem;
+  color: grey;
+}
+.item__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+.item__text {
+  display: block;
+}
+.item__confirm-wrapper {
+  display: none;
+  gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+.item__confirm-wrapper--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

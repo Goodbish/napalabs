@@ -1,0 +1,14 @@
+{
+  "name": "NapaLabstest",
+  "version": "1.0.0",
+  "description": "This is server for Time hunter program that will create your daily work hours in comforatble report",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniil Bannikov (goodbish@mail.ru)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

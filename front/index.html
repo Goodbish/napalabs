@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банников тестовое Napa Labs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <h1 class="title">Банников Даниил (<a href="https://perm.hh.ru/resume/ab3534a9ff082542cc0039ed1f633750356870" target="_blank">cv</a>, <a href="https://t.me/Bannikov_Daniil" target="_blank">tg</a>) - тестовое задание</h1>
+            <button class="btn btn-pill create__button-toggle">Добавить пользователя</button>
+            <div class="create__wrapper">
+                <form class="create__form">
+                    <div class="create__form-block">
+                        <div class="create__item">
+                            <label for="createEmail" class="create__label">Почта</label>
+                            <input type="email" name="email" class="input create__input" required placeholder="Ваша почта">
+                        </div>
+                        <div class="create__item">
+                            <label for="createName" class="create__label">Имя</label>
+                            <input type="text" name="name" class="input create__input" required placeholder="Ваше имя">
+                        </div>
+                    </div>
+
+                    <div class="create__form-buttons">
+                        <button type="submit" class="btn btn-pill create__button">Создать</button>
+                        <button type="reset" class="btn btn-pill btn-flat create__button-cancel">Отменить</button>
+                    </div>
+                </form>
+            </div>
+
+            <h2 class="title">Список пользователей</h2>
+            <div class="list"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

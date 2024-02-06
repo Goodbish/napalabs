@@ -1,0 +1,190 @@
+/* https://codepen.io/pix3l/pen/BYpQYZ */
+
+.icn {
+  position: relative;
+  width: 24px;
+}
+.icn:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+.icn > svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+  height: auto;
+  fill: currentColor;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: #4680FF;
+  color: #f2f2f2;
+  text-transform: capitalize;
+  padding: 4px 10px;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+.btn:hover {
+  background-color: #6092ff;
+  color: #f2f2f2;
+}
+
+.btn-flat {
+  background-color: transparent;
+  color: #000;
+}
+
+.btn-dsbl {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
+/*
+	minSize: whats the smaller dimention the button could be. This ends up being a square in the case of an icon only button
+	pad: left and right padding of the button. Vertical is ignored thanks to flex positioning
+	childGap: the distance between an icon and the button text, when both are present.
+	fontSize: size of the text in a button
+	iconSIze: size of the icon in a button
+*/
+.btn-sm {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.btn-sm > .icn {
+  width: 16px;
+}
+.btn-sm > .icn + .txt {
+  margin-left: 6px;
+}
+
+.btn-md {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 12px;
+  font-size: 15px;
+  line-height: 18px;
+}
+.btn-md > .icn {
+  width: 18px;
+}
+.btn-md > .icn + .txt {
+  margin-left: 6px;
+}
+
+.btn-lg {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 14px;
+  font-size: 17px;
+  line-height: 20px;
+}
+.btn-lg > .icn {
+  width: 22px;
+}
+.btn-lg > .icn + .txt {
+  margin-left: 6px;
+}
+
+.btn.btn-icn {
+  padding: 0;
+}
+
+.btn.btn-crnr {
+  border-radius: 3px;
+}
+
+.btn.btn-pill {
+  border-radius: 999px;
+}
+
+.btn.btn-shdw {
+  -webkit-box-shadow: 0px 6px 6px -3px rgba(70, 128, 255, 0.2), 0px 10px 14px 1px rgba(70, 128, 255, 0.14), 0px 4px 18px 3px rgba(70, 128, 255, 0.12);
+          box-shadow: 0px 6px 6px -3px rgba(70, 128, 255, 0.2), 0px 10px 14px 1px rgba(70, 128, 255, 0.14), 0px 4px 18px 3px rgba(70, 128, 255, 0.12);
+}
+
+code {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 4px;
+  border-radius: 2px;
+  background-color: #EFE9F4;
+  font-family: "Inconsolata", monospace;
+}
+
+.layout {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 98%;
+  padding: 20px;
+  display: grid;
+  grid-gap: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 12px;
+}
+
+.row-header {
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  grid-template-columns: 1fr;
+}
+.row-header code {
+  margin-left: 12px;
+}
+
+.cell {
+  background-color: #fafafa;
+  min-height: 80px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cell--double {
+  grid-column: span 2;
+}/*# sourceMappingURL=buttons.css.map */
